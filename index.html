@@ -7,85 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=format_paint" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=javascript" />
-    <style>
-        .main{
-            height: 100vh;
-            display: flex;
-        }
-        body {
-            position: relative;
-            margin: 0;
-            font-family: 'inter',sans-serif;
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('bg.png');
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-        }
-        .hero{
-            width:50%;
-            margin-top:4rem;
-            margin-left:4rem;
-            padding:10rem;
-            font-size: xx-large;
-        }
-        .hero h1{
-            font-weight: lighter;
-        }
-        .hero .mark{
-            font-weight: 600;
-        }
-        .content{
-            margin-top:4rem;
-            margin-right:4rem;
-            width:50%;
-        }
-        .content ul{
-            height:95%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap:20px;
-            list-style-type: none;
-        }
-        .content ul li{
-            font-size: x-large;
-            font-weight:bold;
-            background-color: rgb(86, 104, 120);
-            padding: 25px;
-            border-radius: 24px;
-            width:80%;
-        }
-        .content ul li a{
-            text-decoration: none;
-            color:inherit;
-        }
-        .material-symbols-outlined{
-           
-            display: inline-block;
-            height:100%;
-            background-color: rgb(166, 225, 187);
-            color:rgb(84, 208, 127);
-            border-radius: 5px;
-        } 
-        .nav{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            margin-right: 40px;
-        }
-          
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>    
+<body>
+    <div class="nav">
+        <div class="toggle-btn">
+            <img src="sun-regular.svg" alt="day" height="20%">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle-label">
+                <span class="toggle-ball" ></span>
+            </label>
+            <img src="moon-regular.svg" alt="night" height="20%" style="margin-left:20px">
+        </div>
+    </div>    
     <div class="main">
     <div class="hero" style="color:white">
         <h1>Welcome to the <br> <span class="mark">FrontEnd Quiz!</span></h1>
